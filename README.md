@@ -6,11 +6,11 @@ Expected Output: "away"
 
 Test: "It recognizes the first letter of a word is a vowel."
 Code: pigLatin("a");
-Expected Output: "away"
+Expected Output: true
 
 Test: "It recognizes the first letter of a word is a vowel regardless of case."
 Code: pigLatin("A");
-Expected Output: "Away"
+Expected Output: true
 
 Test: "It ignores non-alphabetical characters since they can't be vowels."
 Code: pigLatin("6way");
