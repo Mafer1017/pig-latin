@@ -13,14 +13,17 @@ Code: pigLatin("A");
 Expected Output: "Away"
 
 Test: "It ignores non-alphabetical characters since they can't be vowels."
-Code: pigLatin("*&$92%");
+Code: pigLatin("6way");
 Expected Output: 0
 
 Test: "It will add 'ay' to the end of words that begin with a consonant."
 Code: pigLatin("w");
 Expected Output: "way"
 
+Test: "For words that start with a consonant, it will push the first letter to the end of the word."
+Code: pigLatin(way)
+Expected Output: "ayway"
 
-Test: " It recognizes first and/or second letter is a consonant.
-Code: pigLatin();
-Expected Output: "
+Test: " It recognizes all consonants at the beginning of a word until a vowel appears and moves all beginning consonants to the end.
+Code: pigLatin(change);
+Expected Output: angechay
