@@ -27,3 +27,7 @@ Expected Output: "ayway"
 Test: " It recognizes all consonants at the beginning of a word until a vowel appears and moves all beginning consonants to the end.
 Code: pigLatin(change);
 Expected Output: angechay
+
+Test: "It will recognize the 'q' consonate and pull the following 'u' vowel with it."
+Code: pigLatin(quick)
+Expected Output: "ickquay"
